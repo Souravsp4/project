@@ -1,0 +1,79 @@
+/* General style for the dropdown button */
+.dropdown-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Style for the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when the dropdown button is clicked */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Arrange the dropdowns side by side and center them */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    >h2{
+        color: #f1f1f1;
+       margin-top: 30px; 
+  margin-right: 40px;
+ 
+  margin-left: 20px;
+    }
+}
+
+.dropdown-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+.dropdown {
+    margin-right: 20px;
+}
+
+body {
+    /* Set the background image URL */
+    background-image: url("../assets/windows-11-minimal-q3-1366x768.jpg");
+
+
+    /* Adjust background image properties */
+    background-size: cover; /* Image covers the entire background */
+    background-position: center; /* Image is centered */
+    background-repeat: no-repeat; /* Image does not repeat */
+    background-attachment: fixed; /* Image stays fixed when scrolling */
+    /* You can add more background properties as needed */
+}
+
+center-container .h2{
+color: white;
+}
+

@@ -1,43 +1,67 @@
-import React from 'react'
+import React from "react";
+import {Carousel} from "react-responsive-carousel"
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import Feedback from "./Feedback";
+
+import img1 from "../assets/Top-laptop-brands-in-India.webp"
+import img2 from "../assets/dims.jfif"
+
 
 const Home = () => {
   return (
+    <>
+        <div className='home' id="home">
+      <Carousel
+      infiniteLoop
+       autoPlay
+        showStatus={false}
+         showArrows={false}
+         showThumbs={false}
+         
+         interval={1000}
+      >
 
 
-<>
- {/* <head>
-     <title>Centered Dropdown Buttons with CSS Styling</title> 
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
-</head>  */}
-<body>
-   
-    <div class="center-container" > 
-    <h2>Choose your device</h2>
-                <div class="dropdown-wrapper">
-            <div class="dropdown">
-                <button class="dropdown-btn">Laptops+</button>
-                <div class="dropdown-content">
-                    <a href="#">Casual laptops</a>
-                    <a href="#">Gaming laptops</a>
-                    <a href="#">Business laptops</a>
-                </div>
-            </div>
+<div>
+  <img src={img1} alt="Item1" />
+  <p className='legend'>Laptops</p>
+</div>
 
-            <div class="dropdown">
-                <button class="dropdown-btn">Desktops+</button>
-                <div class="dropdown-content">
-                    <a href="#">Casual desktops</a>
-                    <a href="#">Gaming desktops</a>
-                    <a href="#">business desktops </a>
-                </div>
-            </div>
-        </div>
+<div>
+  <img src={img2} alt="Item2" />
+  <p className='legend'>Desktops</p>
+</div>
+
+
+      </Carousel>
     </div>
-</body>
 
+      <div className="home2" id="about">
+        <div>
+          <h1>About Us</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum qui
+            iure dolor omnis maxime obcaecati modi consequatur ut reprehenderit
+            aliquam fugiat, recusandae voluptates architecto ad? Sint reiciendis
+            accusamus inventore, dicta id necessitatibus ratione, dolores
+            quibusdam architecto ex nostrum! Hic vero voluptates laborum. Dolore
+            officiis soluta laborum error a asperiores exercitationem fugit
+            debitis at placeat corporis ex, eligendi mollitia quo, eveniet
+            nesciunt perspiciatis earum quod repudiandae nulla, quisquam aut
+            natus? Atque assumenda quis omnis nostrum, consectetur officiis
+            magni amet temporibus voluptates sit voluptate accusantium numquam,
+            nihil laudantium. Excepturi dicta odit aut praesentium, non porro
+            provident officiis iste minima quis nemo asperiores?
+          </p>
+        </div>
+      </div>
 
-</>
-  )
-}
+      <div className="feedbacks" id="feedbacks" >
+      <Feedback/>
+      </div>
 
-export default Home
+    </>
+  );
+};
+
+export default Home;

@@ -1,6 +1,7 @@
 import React from 'react'
-// import {Link} from "react-router-dom";
-// import {HashLink} from "react-router-hash-link"
+
+import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link"
 
 const Header = () => {
   return (
@@ -8,11 +9,16 @@ const Header = () => {
     <h1>Name</h1>
     <main>
 
-    <a to={"/#home"}>Home</a>
-    <a to={"/contact"}>Contact</a>
-    <a to={"/#about"}>About</a>
-    {/* <HashLink to={"/#brands"}>Brand</HashLink>
-    <Link to={"/servicers"}>Services</Link> */}
+    <HashLink to={"/#home"}>Home</HashLink>
+   < HashLink to={"/#about"}>About</HashLink>
+    <Link to={"/contact"}>Contact</Link>
+    <HashLink to="/#feedbacks">Feedbacks</HashLink>
+
+
+
+    {/* <HashLink to={"/#about"}>About</HashLink>
+    <HashLink to={"/#brands"}>Brand</HashLink>
+    <Link to={"/Services"}>Services</Link> */}
     
     </main>
    </nav>

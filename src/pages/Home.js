@@ -1,15 +1,16 @@
 import React from "react";
 import {Carousel} from "react-responsive-carousel"
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import Feedback from "./Feedback";
+import Feedback from "../components/Feedback";
 
 import img1 from "../assets/Top-laptop-brands-in-India.webp"
 import img2 from "../assets/dims.jfif"
-
+import Header from '../components/Header'
 
 const Home = () => {
   return (
     <>
+    <Header/>
         <div className='home' id="home">
       <Carousel
       infiniteLoop

@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
 
+
 import "./styles/Header.css";
 import "./styles/Home.css";
 import "./styles/Contact.css"; 
@@ -19,7 +20,6 @@ function App() {
    <>
    {/* <Header/>
    <Home/> */}
-
    <Router>
       
       <Routes>
@@ -32,7 +32,6 @@ function App() {
     
   <Footer/>
     </Router>
-
    </>
   );
 }

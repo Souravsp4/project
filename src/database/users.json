@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "testFirst",
+      "lastName": "testLast",
+      "email": "testEmail",
+      "password": "testPass"
+    },
+    {
+      "id": 2,
+      "firstName": "testFirst1",
+      "lastName": "testLast1",
+      "email": "testEmail1",
+      "password": "testPass1"
+    },
+    {
+      "id": 3,
+      "firstName": "testFirst2",
+      "lastName": "testLast2",
+      "email": "testEmail2",
+      "password": "testPass2"
+    },
+    {
+      "firstName": "raja",
+      "lastName": "khan",
+      "email": "raja@gmail.com",
+      "password": "pass",
+      "id": 4
+    }
+  ]
+}

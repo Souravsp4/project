@@ -1,16 +1,18 @@
 
 // import './App.css';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Contact from "./components/Contact";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+
 
 
 import "./styles/Header.css";
 import "./styles/Home.css";
 import "./styles/Contact.css"; 
 import "./styles/Footer.css"; 
+import Registration from "./pages/Registration";
+import Login from "./pages/Login";
 
 
 function App() {
@@ -18,19 +20,18 @@ function App() {
    <>
    {/* <Header/>
    <Home/> */}
-
    <Router>
-      <Header/>
+      
       <Routes>
          <Route path ="/" element={<Home/>}/>
          <Route path ="/Contact" element={<Contact/>}/>
-        
+        <Route path="/registration" element={<Registration/>} />
+        <Route path="/login" element={<Login/>} />
        </Routes>
     
     
   <Footer/>
     </Router>
-
    </>
   );
 }
